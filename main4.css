@@ -1,0 +1,95 @@
+@keyframes Minh{
+  50%
+  {transform: translate(-50%, -100%) scale(3,3);}
+  100%
+  {transform: translate(-50%, -50%) scale(1,1);   
+
+  }  
+}
+h1{
+    color: rgb(255, 0, 221);
+    font-size: 30px;
+    font-weight: bolder;
+}
+a{
+    font-size: 20px;
+    color: rgb(250, 6, 6);
+    font-style: italic;
+}
+h2{
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(0, 255, 21);
+}
+h2:hover{color: rgb(255, 255, 255);}
+h1:hover{color:rgb(255, 255, 255);}
+h1::selection{background-color: crimson;}
+.Minh{
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation-name: Minh;
+    animation-duration: 0.01s;
+    animation-iteration-count: infinite;
+}
+.Minh div{
+    background: rgb(247, 4, 174);
+    width: 71px;
+    height: 126px;
+    top: 40%;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+.left{
+    left: 45px;
+    transform: rotate(330deg);
+
+}
+.right{
+    right: 45px;
+    transform: rotate(30deg);
+}
+.img{
+    width: 160px;
+    height: 700px;
+    display: inline-block;
+}
+#imgleft{
+    background-image: url(https://img2.thuthuatphanmem.vn/uploads/2019/01/05/anh-cap-doi-1_042809111.jpg);
+    width: 700px;
+    height: 700px;
+    background-size: cover;
+
+}
+#imgright{
+    background-image: url(https://24s.vn/anh-dai-dien-cho-facebook-de-thuong/imager_33_3918_700.jpg);
+    width: 700px;
+    height: 700px;
+    background-size: cover;
+    margin-left: 50px;
+}
+@media only screen and (max-width: 740px){
+    #imgleft{
+        width: 180px;
+        height: 180px;
+        margin-top: 20px;
+       
+    
+    }
+    #imgright{
+        width: 180px;
+        height: 180px;
+        margin-left: 180px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }   
+}
+
+
+
+
